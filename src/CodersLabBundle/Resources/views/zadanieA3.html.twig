@@ -1,0 +1,13 @@
+<html>
+<head>
+
+</head>
+<body>
+{% for tweet in tweets %}
+
+    <p><a href="/showTweet/{{ tweet.id }}"><h1>{{ tweet.text }}</h1></a></p>
+{% else %}
+    Brak Tweetów
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head>
+
+</head>
+<body>
+{% if tweet is null %}
+    Taki Tweet nie istnieje.
+{% else %}
+    <h1>{{ tweet.name }}</h1>
+    <p>{{ tweet.id }}</p>
+    <p>{{ tweet.text }}</p>
+
+{% endif %}
+</body>
+</html>
